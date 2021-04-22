@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "spring.management.endpoint.health.show-details",
+      "type": "java.lang.String",
+      "description": "Description for spring.management.endpoint.health.show-details."
+  }
+] }

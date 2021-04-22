@@ -1,0 +1,8 @@
+server:
+  port: 8004
+spring:
+  application:
+    name: cloud-consumer-zkserver
+  cloud:
+    zookeeper:
+      connect-string: 47.93.18.108:2181
