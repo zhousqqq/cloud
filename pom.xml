@@ -21,6 +21,8 @@
         <module>rabbitmq-provider</module>
         <module>rabbitmq-consumer</module>
         <module>alibaba-payment</module>
+        <module>alibaba-consumer</module>
+        <module>alibaba-config</module>
     </modules>
 
     
@@ -131,7 +133,9 @@
                 <version>${lombok.version}</version>
                 <optional>true</optional>
             </dependency>
+            
         </dependencies>
+        
     </dependencyManagement>
     <build>
         <plugins>
