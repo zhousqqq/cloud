@@ -23,6 +23,12 @@
         <module>alibaba-payment</module>
         <module>alibaba-consumer</module>
         <module>alibaba-config</module>
+        <module>alibaba-sentinel</module>
+        <module>sentinel-payment</module>
+        <module>sentinel-consumer</module>
+        <module>alibaba-seata</module>
+        <module>activemq-payment</module>
+        <module>activemq-consumer</module>
     </modules>
 
     

@@ -1,0 +1,18 @@
+spring:           #表示该配置直接为Spring容器负责处理 
+  activemq:
+    broker-url: tcp://localhost:61616   #消息组件的连接主机信息 
+    user: admin
+    password: admin
+    pool:   
+      enabled: true   #true表示使用连接池
+      max-connections: 5      #连接池最大连接数
+      idle-timeout: 30000 #空闲的连接过期时间，默认为30秒
+      # expiry-timeout: 0 强制的连接过期时间，与idleTimeout的区别在于：idleTimeout是在连接空闲一段时间失效，而expiryTimeout不管当前连接的情况，只要达到指定时间就失效。默认为0，never 
+    packages:
+      trust-all: true  # 信任所有的包 如果传输的对象是Obeject 这里必须加上这句或者指定信任的包  否则会导致对象序列化失败 出现classnotfound异常
+  jms:
+    pub-sub-domain: false   #配置消息的类型，如果是true则表示为topic消息，如果为false表示Queue消息
+mq:
+  queue: queue
+server:
+  port: 3333
